@@ -24,7 +24,9 @@ const Navbar = () => {
   return (
     <nav className="nav">
       <div className="logo">
-        <h1>Music Himmy</h1>
+        <h1>
+          <i className="fa-solid fa-music"></i> Music Himmy
+        </h1>
       </div>
       <div className="nav-link">{links}</div>
       <div className="phone">

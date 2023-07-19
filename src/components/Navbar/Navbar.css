@@ -1,7 +1,4 @@
 .nav {
-  position: sticky;
-  top: 0;
-  right: 0;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -13,12 +10,15 @@
 }
 
 .logo {
-  border: 2.5px solid var(--orange);
   text-align: center;
   cursor: pointer;
   border-radius: 8px;
 }
 
+.logo h1 i {
+  font-size: 1.25rem;
+  padding: 0px 5px;
+}
 .logo h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -83,8 +83,15 @@
 
 @media only screen and (max-width: 1023px) {
   /* Your CSS styles for tablets here */
+  .nav {
+    margin: 0 auto;
+  }
   .nav-link {
     display: none;
+  }
+
+  .logo {
+    flex: 1;
   }
 
   .phone {
