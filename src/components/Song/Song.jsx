@@ -49,8 +49,8 @@ const Song = () => {
       <div class="playlist">
         <button>
           <a
-            target="blank"
             href="https://www.youtube.com/watch?v=pyiVJAPpHT0&list=PLzb7BPw-Seb4ZQzy5-10zdMDEEAamy5m0&ab_channel=MusicHimmy"
+            target="blank"
           >
             My Playlist
           </a>
