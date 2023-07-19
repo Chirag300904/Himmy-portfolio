@@ -1,0 +1,103 @@
+.nav {
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  background: transparent;
+  height: 100px;
+}
+
+.logo {
+  border: 2.5px solid var(--orange);
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.logo h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 50px;
+  padding: 0.25rem 1.2rem;
+}
+
+.nav-link ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link ul li a {
+  display: inline-block;
+  line-height: 62px;
+  padding: 21px 13px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+.nav-link ul li a:hover {
+  color: var(--orange);
+}
+
+.phone {
+  display: none;
+}
+
+.phone i {
+  font-size: 1.75rem;
+}
+
+.phone ul {
+  position: absolute;
+  background: black;
+  height: 100vh;
+  width: 25vh;
+  top: 0;
+  right: 0;
+  padding: 3.5rem 2rem;
+  text-align: center;
+}
+
+.phone ul li a {
+  display: inline-block;
+  line-height: 62px;
+  padding: 13px;
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+.cross {
+  position: absolute;
+  top: 15;
+  right: 0;
+  z-index: 999;
+  margin-right: 18vh;
+}
+
+@media only screen and (max-width: 1023px) {
+  /* Your CSS styles for tablets here */
+  .nav-link {
+    display: none;
+  }
+
+  .phone {
+    display: flex;
+  }
+  .phone {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Your CSS styles for phones here */
+  .logo h1 {
+    font-size: 17px;
+  }
+}

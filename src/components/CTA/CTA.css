@@ -1,0 +1,149 @@
+#contact {
+  width: 100%;
+  height: fit-content;
+  background-image: url(../../assets/images/about-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  padding-top: 4.5rem;
+}
+.contact form {
+  display: block;
+  width: 400px;
+}
+input {
+  display: inline-block;
+  font-size: 14px;
+  color: #ffffff;
+  width: 380px;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  height: 76px;
+  background: transparent;
+  outline: none;
+}
+input:focus {
+  border-bottom: 1px solid var(--orange);
+}
+input::placeholder {
+  line-height: 120px;
+}
+.contact-button {
+  width: 130px;
+  height: 50px;
+  margin: 45px 0px 0px 0px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--orange);
+  transition: all 0.4s ease-in-out;
+  font-size: 1.25rem;
+}
+
+.contact-button:hover {
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  background-color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+.contact-button:hover i {
+  color: var(--orange);
+}
+.location {
+  margin-top: 150px;
+  padding-top: 50px;
+}
+.contact,
+.location {
+  margin: 0px 50px;
+}
+.home {
+  display: flex;
+  margin-bottom: 25px;
+}
+.locale-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 150px;
+  margin-right: 25px;
+}
+.locale-icon:hover,
+.locale-icon:hover .locale-icon i {
+  border: 2px solid var(--orange);
+  background: var(--orange);
+  transition: 0.3s;
+}
+
+.home i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+.locale h4 {
+  padding-bottom: 3px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.social a i {
+  font-size: 1.35rem;
+  border: 2px solid #fff;
+  padding: 12px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.social a:hover i {
+  border: 2px solid var(--orange);
+  background-color: var(--orange);
+  transition: all 0.3s ease-in-out;
+}
+
+.copyright {
+  padding-top: 10px;
+  text-align: center;
+  color: #ccc;
+  font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 1023px) {
+  /* Your CSS styles for tablets here */
+  .contact-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact {
+    margin: 0 auto;
+  }
+
+  .location {
+    text-align: left;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Your CSS styles for phones here */
+
+  .contact form {
+    width: 100%;
+  }
+  .contact form input {
+    width: 300px;
+  }
+}

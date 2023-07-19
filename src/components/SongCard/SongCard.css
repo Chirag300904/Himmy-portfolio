@@ -1,0 +1,28 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  object-fit: cover;
+}
+
+.card-desc h4 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  padding-bottom: 6px;
+}
+
+.card-desc p {
+  color: #ccc;
+}

@@ -1,0 +1,88 @@
+#about {
+  width: 100%;
+  height: fit-content;
+  background-image: url(../../assets/images/about-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 71px;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color-burn;
+}
+
+.about-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-img {
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img .orange-box {
+  width: 230px;
+  height: 380px;
+  background: var(--orange);
+  position: relative;
+}
+.about-img img {
+  width: 285px;
+  height: 345px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.about-desc {
+  width: 50%;
+}
+
+.about-desc p {
+  color: #ccc;
+  line-height: 1.25rem;
+}
+
+@media only screen and (max-width: 1023px) {
+  /* Your CSS styles for tablets here */
+
+  .about-img {
+    width: 75%;
+  }
+
+  .about-box {
+    flex-direction: column;
+  }
+
+  .about-desc {
+    width: 85%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Your CSS styles for phones here */
+
+  .about-img {
+    width: 100%;
+  }
+
+  .about-img .orange-box {
+    width: 140px;
+    height: 275px;
+  }
+  .about-img img {
+    width: 185px;
+    height: 250px;
+  }
+
+  .about-desc {
+    width: 100%;
+  }
+  .about-desc p {
+    font-size: 0.75rem;
+  }
+}
