@@ -10,7 +10,7 @@ const Header = () => {
           I'm <br />
           <span>Music Himmy</span>
         </h1>
-        <h4>A professional music composer and singer</h4>
+        <h4>A professional music composer and producer</h4>
         <button class="header-button">
           <a href="#song">Latest Tracks</a>
         </button>
